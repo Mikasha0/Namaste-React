@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
 </head>
+
 <body>
-    <div class="root">
-        <h1>Hello World</h1>
+    <div id="root">
+        <!-- lets add hello world using JS -->
+
     </div>
 </body>
+<script>
+    const div = document.getElementById('root');
+
+    const tag = document.createElement('h1')
+    
+    const elementWithTexxt = tag.innerHTML = "Namaste React"
+    console.log(elementWithTexxt)
+
+    div.appendChild(tag);
+    console.log(div);
+</script>
+
 </html>
