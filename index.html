@@ -13,16 +13,26 @@
 
     </div>
 </body>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script>
-    const div = document.getElementById('root');
+    // const div = document.getElementById('root');
 
-    const tag = document.createElement('h1')
+    // const tag = document.createElement('h1')
     
-    const elementWithTexxt = tag.innerHTML = "Namaste React"
-    console.log(elementWithTexxt)
+    // const elementWithTexxt = tag.innerHTML = "Namaste React"
 
-    div.appendChild(tag);
-    console.log(div);
+    // div.appendChild(tag);
+
+    
+
+   const reactElement =  React.createElement('h1', {}, 'Namaste React');
+
+   const root = ReactDOM.createRoot(document.getElementById('root'))
+   console.log(reactElement)
+   root.render(reactElement)
+    
 </script>
 
 </html>
