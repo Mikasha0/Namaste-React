@@ -9,8 +9,12 @@
 
 <body>
     <div id="root">
+        not rendered
         <!-- lets add hello world using JS -->
-
+        <!-- <h1>Namaste React</h1>
+        <h5>hello world!</h5> -->
+        <!-- This above h1 element is being overwritten by below createElement  -->
+        <!-- the reason why this above thing happens is because inside the root we have rendered reactElement -->
     </div>
 </body>
 
@@ -20,19 +24,37 @@
     // const div = document.getElementById('root');
 
     // const tag = document.createElement('h1')
-    
+
     // const elementWithTexxt = tag.innerHTML = "Namaste React"
 
     // div.appendChild(tag);
 
-    
+    //lets create a nested element now.
 
-   const reactElement =  React.createElement('h1', {}, 'Namaste React');
+    const heading1 = React.createElement('h1', {
+        className: "root", style: {
+            color: "red"
+        }
+    }, 'Namaste React');
+    const heading2 = React.createElement('h2', {
+        className: "heading2", style: {
+            color: "green"
+        }
+    }, 'Namaste JS');
+    const heading3 = React.createElement('h3', {
+        className: "heading3", style: {
+            color: "blue"
+        }
+    }, 'Namaste Next');
 
-   const root = ReactDOM.createRoot(document.getElementById('root'))
-   console.log(reactElement)
-   root.render(reactElement)
-    
+    //This is how you can create nested element using createElement in React.
+    //And this is a dynacmic way of adding nested element in React.
+
+    const reactElement = React.createElement('div', {}, [heading1, heading2, heading3])
+
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    root.render(reactElement)
+
 </script>
 
 </html>
