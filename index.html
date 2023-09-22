@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css"><!--link to the css file.-->
 </head>
 
 <body>
@@ -18,9 +19,12 @@
     </div>
 </body>
 
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<script src="App.js">//this was i am just creating a URL that points to a specific JS file and renders it</script>
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+<!-- removing cdn links for react and reactDOM and instead using react and reactDOM package. -->
+
+<script type="module" src="App.js">//I am just creating a URL that points to a specific JS file and renders it</script>
 
 </html>
 

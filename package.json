@@ -2,14 +2,14 @@
   "name": "namaste_react",
   "version": "1.0.0",
   "description": "Namaste React Course",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Aniket Tamrakar",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",

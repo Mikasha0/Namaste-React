@@ -1,3 +1,6 @@
+    import React from 'react';
+    import  ReactDOM from 'react-dom';
+    
     // const div = document.getElementById('root');
 
     // const tag = document.createElement('h1')
