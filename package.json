@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Namaste React Course",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Aniket Tamrakar",
   "license": "ISC",
@@ -14,5 +16,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserlist":[
+    "last two versions"
+  ]
 }
